@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spice Cart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- ======= Header Slider Section ======= -->
+    <header id="header">
+        <div id="headerCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+            <!-- Slide Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#headerCarousel" data-slide-to="1"></li>
+              <li data-target="#headerCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <!-- Slide 1 width has been set coz of different browsers--> 
+              <div class="carousel-item active">
+                <div class="carousel-background"><img src="./images /vegetables.jpg" alt="" width="100%"></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2>Welcome to <span>Spice Cart</span></h2>
+                    <p>Spices are recognized from herbs, which are the leaves, blossoms, or stems of plants utilized for seasoning or as an embellishment. Or, in other words to ruining.</p>
+                    <a href="#" class="contactus-btn">Coming Soon</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="carousel-background"><img src="./images /salad.jpg" alt="" width="100%"></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2>Where does it come from</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
+                    <a href="#" class="contactus-btn">Coming Soon </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="carousel-background"><img src="./images /Veggies.jpg" alt="" width="100%"></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2>Why do we use it</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+                    <a href="#" class="contactus-btn">Coming Soon</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel pre and next arrow -->
+            <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+              <i class="fas fa-arrow-circle-left"></i>
+            </a>
+
+            <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+              <i class="fas fa-arrow-circle-right"></i>
+            </a>
+        </div>
+    </header><!-- End header -->
+    <style>
+        #header .carousel-item {
+          width: 100%;
+          height: 100vh;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+      }
+      #header .carousel-item::before {
+          content: '';
+          background-color: rgba(21, 27, 26, 0.7);
+          position: absolute;
+          height: 100vh;
+          width: 100%;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+      }
+      #header .carousel-item img {
+          height: 100vh;
+      }
+      #header .carousel-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          bottom: 0;
+          top: 0;
+          left: 0;
+          right: 0;
+      }
+      #header .carousel-content {
+          text-align: center;
+          margin-top: -100px;
+      }
+      #header .active .carousel-content {
+          margin-top: 100px;
+          transition: 0.5s;
+      }
+      #header h2 {
+          color: #fff;
+          margin-bottom: 30px;
+          font-size: 48px;
+          font-weight: 700;
+      }
+      #header p {
+          width: 80%;
+          -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+          margin: 0 auto 30px auto;
+          color: #fff;
+      }
+      #header .carousel-inner .carousel-item {
+          transition-property: opacity;
+          background-position: center top;
+      }
+      #header .carousel-control-prev, #header .carousel-control-next {
+          width: 10%;
+          font-size: 36px;
+          color: #fff;
+      }
+      #header .carousel-indicators li {
+          cursor: pointer;
+          opacity: 1;
+      }
+      #header .carousel-indicators .active {
+          background-color: #ffeb3b;
+      }
+      #header .contactus-btn {
+          font-weight: 500;
+          font-size: 14px;
+          letter-spacing: 1px;
+          display: inline-block;
+          padding: 12px 32px;
+          border-radius: 50px;
+          transition: 0.5s;
+          line-height: 1;
+          margin: 10px;
+          color: #fff;
+          -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+          border: 2px solid #ffffff;
+      }
+      #header .contactus-btn:hover {
+          background: #ffffff;
+          color: #333333;
+          text-decoration: none;
+      }
+      
+      /*--======= Slider Section Responsive CSS ======= --*/
+      @media (max-width: 768px) {
+        #header h2 {
+          font-size: 24px;
+        }
+        #header .carousel-control-prev, #header .carousel-control-next {
+          font-size: 24px;
+      }
+      }
+      @media (min-width: 1024px) {
+        #header p {
+          width: 60%;
+        }
+      }
+      </style>
+</body>
+</html>
